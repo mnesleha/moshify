@@ -149,3 +149,31 @@ a {
         padding-left: 0;
     }
 }
+
+/* Icons */
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+.icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f3f9fa;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* .icon--secondary {
+    fill: var(--color-secondary);
+} */
