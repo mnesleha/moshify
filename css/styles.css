@@ -165,8 +165,17 @@ a {
     height: 40px;
 }
 
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 .icon--primary {
     fill: var(--color-primary);
+}
+
+.icon--white {
+    fill: white;
 }
 
 .icon-container {
@@ -180,6 +189,10 @@ a {
     background-color: #f3f9fa;
     padding: 5px;
     box-sizing: border-box;
+}
+
+.icon-container--accent {
+    background: var(--color-accent);
 }
 
 /* .icon--secondary {
@@ -403,9 +416,6 @@ a {
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/*
-TOFIX: The quotes are the wrong way round
-*/
 .quote__text::before {
     content: open-quote;
 }
@@ -467,5 +477,39 @@ TOFIX: The quotes are the wrong way round
     .grid--2x3 {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
+    }
+}
+
+/* Testimonials */
+/* TODO: phones icon positioning */
+
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote, .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote {
+        margin-left: 6rem;
     }
 }
